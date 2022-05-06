@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion</title>
+    <script src="https://kit.fontawesome.com/9a4fd79c93.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">FAQ</div>
+      <span class="line"></span>
+      <div class="acordion">
+        <div class="question_box">Wer Unterichtet  </div>
+        <div class="answerbox">Web deweloper</div>
+      </div>
+
+      <div class="acordion">
+        <div class="question_box">Wer Unterichtet  </div>
+        <div class="answerbox">Web deweloper
+            <p class="answer">Es werde folgende
+                <ul>
+                    <li class="learning item">HTML</li>
+                    <li class="learning item">CSS</li>
+                    <li class="learning item">JAVA</li>
+                    <li class="learning item">VUE</li>
+                    <li class="learning item">PHP</li>
+                    <li class="learning item">SQL</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <div class="acordion">
+        <div class="question_box">Wer Unterichtet  </div>
+    <div class="answerbox">Web deweloper</div>
+</div>
+<div class="acordion">
+        <div class="question_box">Wer Unterichtet  </div>
+        <div class="answerbox">Web deweloper</div>
+      </div>
+    </div>
+
+    <script>
+        const acord= document.getElementsByClassName("acordion");
+
+        for ( i = 0; i < acord.length; i++) {
+            
+            acord[i].addEventListener("click", function () {
+                this.classList.toggle("active")
+                
+            })
+            
+        }
+    </script>
+  </body>
+</html>
